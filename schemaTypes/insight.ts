@@ -24,6 +24,13 @@ export const insight = defineType({
     }),
 
     defineField({
+      name: 'publishAt',
+      title: 'Publish At',
+      type: 'datetime',
+      initialValue: () => new Date().toISOString(),
+    }),
+
+    defineField({
       name: 'subtitle',
       title: 'Subtitle',
       type: 'text',
