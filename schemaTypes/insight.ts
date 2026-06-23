@@ -37,6 +37,14 @@ export const insight = defineType({
     }),
 
     defineField({
+      name: 'featured',
+      title: 'Pin to Homepage',
+      type: 'boolean',
+      initialValue: false,
+      description: 'Display this article in the Featured Insights section on the Home page.',
+    }),
+
+    defineField({
       name: 'thumbnail',
       title: 'Thumbnail',
       type: 'image',
